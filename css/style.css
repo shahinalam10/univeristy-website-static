@@ -1,0 +1,267 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+/* header section */
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../image/banner.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.c-mr-0{
+    margin-left: 2;
+}
+.logo img{
+    width: 250px;
+}
+.ps-10{
+    padding-left: 6rem;
+}
+.menu ul li a{
+    color: white;
+} 
+.active,.menu ul li:hover a{
+    color: crimson;
+}
+.menu ul li{
+    padding-right: 25px;
+}
+.menu button{
+    background-color: white;
+}
+.menu ul li::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    background-color: crimson;
+    display: block;
+    transition: .5s;
+}
+.menu ul li:hover::after{
+    width: 70%;
+}
+/* text box part */
+.text-box{
+    width: 90%;
+    position: relative;
+    color: white;
+    top:70%;
+    left:5%;
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+.text-box p{
+    font-size: 14px;
+    margin: 40px 10px;
+}
+.text-box a{
+    color: white;
+    padding: 12px 33px;
+}
+.outline-btn{
+    border-color: white;
+    border-radius: 0;
+    transition: 1s;
+}
+.outline-btn:hover{
+    border-color: crimson;
+    background-color: crimson;
+}
+/* header body */
+.course{
+    text-align: center;
+    margin: 80px 150px;
+}
+.course h1{
+    font-weight: 500;
+    font-size: 38px;
+    color: black;
+}
+.course p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.822);
+}
+.course-content{
+    padding:9px;
+    background-color: rgb(247, 234, 234);
+    transition: .3s;
+}
+.course-content h1{
+    text-align: center;
+}
+.course-content p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.863);
+    margin-top: 20px;
+}
+.course-content:hover{
+    box-shadow: 0px 0px 13px black;
+}
+/* main body */
+.campus-content{
+    position: relative;
+    top: 40px;
+}
+.campus-content img{
+    width: 100%;
+    border-radius: 5px;
+}
+.layer{
+    background-color:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .5;
+    transition: .5s;
+}
+.layer-content h3{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+.campus-content:hover .layer-content h3{
+    opacity: 2;
+    bottom: 50%;
+    color: white;
+}
+.campus-content:hover .layer{
+    background-color: rgba(220, 20, 60, 0.87);
+    opacity: .4;
+}
+/* facilities */
+
+.card-body h5{
+    text-align: left;
+    margin-top: 30px;
+    color: black;
+}
+.card-body p{
+    margin-top: 6%;
+    text-align: left;
+}
+/* testmonial */
+.testmonial{
+    padding-top: 100px;
+}
+/* online course */
+.online-course{
+    height: 450px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../image/banner2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.online-course h1,h2{
+    color: white;
+    text-align: center;
+    position:relative;
+    top: 20%;
+    font-weight: 600;
+    font-size: 40px;
+}
+.last-button{
+    position: relative;
+    top: 40%;
+    left: 42%;
+    padding: 15px 40px;
+    color: white;
+    border-color: white ;
+}
+.last-button:hover{
+    background-color: crimson;
+    border-color: crimson;
+    transition: 1s;
+}
+
+/* footer */
+.footer{
+    padding-top: 100px;
+}
+.footer h4{
+    font-size: 20px;
+}
+.footer p{
+    padding-top: 20px;
+    text-align: center;
+}
+/* lastfooter */
+.last-footer{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* resonsive part */
+@media(max-width:540px){
+    .header{
+        min-height: 80vh;
+    }
+    .ps-10{
+        padding-left: 2rem;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .menu ul{
+        background-color:rgb(0, 0, 0);
+        position: absolute;
+        z-index: 2;
+        width: 179px;
+        right: 1px;
+        border-radius: 8px;
+    }
+    .menu ul li a{
+        text-align: justify;
+        padding-left: 30px;
+    }
+    .menu ul li:last-child{
+        width: 0%;;
+    }
+    .text-box{
+        top:29%
+    }
+    .text-box h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .text-box p{
+        text-align: justify;
+    }
+    .text-box a{
+        padding: 6px 15PX;
+    }
+    .course{
+        margin: 20px 15px;
+    }.facilities{
+        padding-top: 30px;
+    }
+    .online-course h1,h2{
+        font-size: 35px;
+    }
+    .last-button{
+        left: 33%;
+        top: 30%;
+    }
+}
